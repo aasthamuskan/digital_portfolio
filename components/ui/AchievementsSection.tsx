@@ -44,23 +44,23 @@ export default function AchievementsSection() {
                                         {ach.link ? (
                                             <a href={ach.link} target="_blank" rel="noopener noreferrer" className="block h-full">
                                                 <div className="flex items-start gap-4 p-4 h-full rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-primary/50 transition-all cursor-pointer">
-                                                    <ach.icon size={28} className="text-primary mt-1 shrink-0 group-hover:text-accent transition-colors" />
+                                                    <ach.icon size={32} className="text-primary mt-1 shrink-0 group-hover:text-accent transition-colors" />
                                                     <div>
-                                                        <h4 className="font-bold text-lg leading-tight mb-2 flex items-center justify-between gap-2">
+                                                        <h4 className="font-bold text-xl leading-tight mb-2 flex items-center justify-between gap-2">
                                                             {ach.title}
                                                             <span className="opacity-0 group-hover:opacity-100 transition-opacity text-xs border border-accent/30 text-accent px-2 py-0.5 rounded-full">View</span>
                                                         </h4>
-                                                        <p className="text-neutral-400 text-sm mb-2">{ach.desc}</p>
+                                                        <p className="text-neutral-300 text-base mb-3 leading-relaxed tracking-wide">{ach.desc}</p>
                                                         <span className="text-xs font-mono text-primary/70">{ach.date}</span>
                                                     </div>
                                                 </div>
                                             </a>
                                         ) : (
                                             <div className="flex items-start gap-4 p-4 h-full rounded-2xl bg-white/5 border border-white/10">
-                                                <ach.icon size={28} className="text-primary mt-1 shrink-0" />
+                                                <ach.icon size={32} className="text-primary mt-1 shrink-0" />
                                                 <div>
-                                                    <h4 className="font-bold text-lg leading-tight mb-2">{ach.title}</h4>
-                                                    <p className="text-neutral-400 text-sm mb-2">{ach.desc}</p>
+                                                    <h4 className="font-bold text-xl leading-tight mb-2">{ach.title}</h4>
+                                                    <p className="text-neutral-300 text-base mb-3 leading-relaxed tracking-wide">{ach.desc}</p>
                                                     <span className="text-xs font-mono text-primary/70">{ach.date}</span>
                                                 </div>
                                             </div>

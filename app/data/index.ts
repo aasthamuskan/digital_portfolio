@@ -41,7 +41,12 @@ export const SKILLS = {
         { name: "Teamwork", level: 85 }
     ],
     tools: [
-        "Git", "VS Code", "Postman", "Vercel", "MySQL", "PostgreSQL", "Bootstrap"
+        { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" },
+        { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+        { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
+        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+        { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" }
     ]
 };
 
@@ -141,10 +146,10 @@ export const ACHIEVEMENTS = [
 ];
 
 export const CERTIFICATES = [
-    { name: "Cloud Computing (NPTEL)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing" },
-    { name: "Chat GPT Generative AI LLM (Infosys Springboard)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing" },
-    { name: "Build Generative AI apps (Infosys Springboard)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing" },
-    { name: "Object Oriented Programming (NeoColab)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing" },
-    { name: "Data Structure and Algorithms (NeoColab)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing" }
+    { name: "Cloud Computing (NPTEL)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" },
+    { name: "Chat GPT Generative AI LLM (Infosys Springboard)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" },
+    { name: "Build Generative AI apps (Infosys Springboard)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing", image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800" },
+    { name: "Object Oriented Programming (NeoColab)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" },
+    { name: "Data Structure and Algorithms (NeoColab)", link: "https://drive.google.com/drive/folders/1hUPa0DnlALUKtgRjB7eihtZBM-OnkAfO?usp=sharing", image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&q=80&w=800" }
 ];
 

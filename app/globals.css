@@ -19,8 +19,16 @@
   --font-display: 'Clash Display', 'Outfit', sans-serif;
 }
 
+.dark {
+  --background: #030014;
+  --foreground: #f8fafc;
+  --primary: #6366f1;
+  --secondary: #f472b6;
+  --accent: #a78bfa;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
     --background: #030014;
     --foreground: #f8fafc;
     --primary: #6366f1;

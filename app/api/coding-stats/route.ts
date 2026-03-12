@@ -48,7 +48,7 @@ async function fetchGitHubStats() {
 
         // Get last commit message
         const pushEvent = Array.isArray(events) ? events.find((e: { type: string }) => e.type === "PushEvent") : null;
-        const lastCommit = pushEvent ? pushEvent.payload.commits[0]?.message : "No recent public commits";
+        const lastCommit = pushEvent ? pushEvent.payload?.commits?.[0]?.message || "No recent public commits" : "No recent public commits";
         const lastActive = pushEvent ? pushEvent.created_at : user.updated_at;
 
         return {

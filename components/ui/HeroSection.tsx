@@ -25,13 +25,43 @@ const Letter = ({ children, index }: { children: string; index: number }) => {
 
 const Title = ({ text }: { text: string }) => {
     return (
-        <div className="overflow-hidden">
-            {text.split("").map((char, i) => (
-                <Letter key={i} index={i}>
-                    {char}
-                </Letter>
+        <div className="overflow-hidden flex flex-wrap justify-center gap-x-2 md:gap-x-4">
+            {text.split(" ").map((word, wordIdx) => (
+                <div key={wordIdx} className="flex">
+                    {word.split("").map((char, i) => (
+                        <Letter key={`${wordIdx}-${i}`} index={wordIdx * 5 + i}>
+                            {char}
+                        </Letter>
+                    ))}
+                </div>
             ))}
         </div>
+    );
+};
+
+const TypewriterText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
+    return (
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay }}
+            className="text-lg md:text-xl text-neutral-400 mt-6 max-w-2xl mx-auto leading-relaxed"
+        >
+            {text.split("").map((char, index) => (
+                <motion.span
+                    key={`${char}-${index}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        duration: 0.1,
+                        delay: delay + index * 0.03, // Typing speed
+                        ease: "linear"
+                    }}
+                >
+                    {char}
+                </motion.span>
+            ))}
+        </motion.div>
     );
 };
 
@@ -50,7 +80,7 @@ export default function HeroSection() {
             className="h-screen overflow-hidden flex flex-col items-center justify-center relative"
         >
             <motion.div style={{ y }} className="relative z-10 text-center">
-                <h1 className="text-[12vw] leading-[0.8] font-display font-bold uppercase tracking-tighter mix-blend-difference mb-4">
+                <h1 className="text-[12vw] leading-[0.8] font-display font-bold tracking-tighter mix-blend-difference mb-4">
                     <Title text={PROFILE.name} />
                 </h1>
 
@@ -58,10 +88,13 @@ export default function HeroSection() {
                     initial={{ opacity: 0, filter: "blur(10px)" }}
                     animate={{ opacity: 1, filter: "blur(0px)" }}
                     transition={{ duration: 1, delay: 1 }}
-                    className="text-2xl md:text-3xl font-light text-gray-400 mt-8"
+                    className="text-2xl md:text-3xl font-light text-primary mt-8 mb-2"
                 >
                     {PROFILE.title}
                 </motion.div>
+
+                {/* Typing effect for Bio */}
+                <TypewriterText text={PROFILE.bio} delay={1.5} />
 
                 <div className="flex gap-4 justify-center mt-12">
                     {PROFILE.socials.map((social, i) => (

@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import CustomCursor from "@/components/ui/CustomCursor";
+import Navbar from "@/components/ui/Navbar";
 
 // Fallback font variables (System fonts)
 const outfitVariable = "font-sans";
@@ -31,6 +32,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SmoothScroll>
+            <Navbar />
             <CustomCursor />
             {children}
           </SmoothScroll>
