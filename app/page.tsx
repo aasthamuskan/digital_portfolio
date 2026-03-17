@@ -1,7 +1,9 @@
 import BackgroundMotion from "@/components/background/BackgroundMotion";
 import HeroSection from "@/components/ui/HeroSection";
+import AboutSection from "@/components/ui/AboutSection";
 import SkillsSection from "@/components/ui/SkillsSection";
 import Timeline from "@/components/ui/Timeline";
+import ResumeSection from "@/components/ui/ResumeSection";
 import ProjectsSection from "@/components/ui/ProjectsSection";
 import SummerTrainingSection from "@/components/ui/SummerTrainingSection";
 import CertificationsSection from "@/components/ui/CertificationsSection";
@@ -20,12 +22,14 @@ export default function Home() {
     <main className="relative min-h-screen">
       <BackgroundMotion />
       <HeroSection />
+      <AboutSection />
       <SkillsSection />
       <ProjectsSection />
       <SummerTrainingSection />
       <CertificationsSection />
       <AchievementsSection />
       <Timeline />
+      <ResumeSection />
       
       <CodingProfile />
       <LiveStats />

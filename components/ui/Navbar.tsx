@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, Code, Briefcase, Award, Trophy, GraduationCap, Mail, AppWindow } from "lucide-react";
+import { Home, Code, Briefcase, Award, Trophy, GraduationCap, Mail, AppWindow, User, FileText } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
@@ -11,12 +11,14 @@ export default function Navbar() {
 
   const tabs = [
     { id: "home", label: "Home", icon: Home, color: "text-blue-400", bgGlow: "bg-blue-500/10" },
+    { id: "about", label: "About", icon: User, color: "text-indigo-400", bgGlow: "bg-indigo-500/10" },
     { id: "skills", label: "Skills", icon: Code, color: "text-purple-400", bgGlow: "bg-purple-500/10" },
     { id: "projects", label: "Projects", icon: AppWindow, color: "text-emerald-400", bgGlow: "bg-emerald-500/10" },
     { id: "training", label: "Training", icon: Briefcase, color: "text-orange-400", bgGlow: "bg-orange-500/10" },
     { id: "certifications", label: "Certifications", icon: Award, color: "text-cyan-400", bgGlow: "bg-cyan-500/10" },
     { id: "achievements", label: "Achievements", icon: Trophy, color: "text-yellow-400", bgGlow: "bg-yellow-500/10" },
     { id: "experience", label: "Education", icon: GraduationCap, color: "text-pink-400", bgGlow: "bg-pink-500/10" },
+    { id: "resume", label: "Resume", icon: FileText, color: "text-teal-400", bgGlow: "bg-teal-500/10" },
     { id: "contact", label: "Contact", icon: Mail, color: "text-red-400", bgGlow: "bg-red-500/10" },
   ];
 

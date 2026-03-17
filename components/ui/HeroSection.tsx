@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { PROFILE } from "@/app/data";
 import Magnetic from "./Magnetic";
 import { ArrowDown } from "lucide-react";
+import Image from "next/image";
 
 const Letter = ({ children, index }: { children: string; index: number }) => {
     return (
@@ -117,7 +118,34 @@ export default function HeroSection() {
             ref={container}
             className="h-screen overflow-hidden flex flex-col items-center justify-center relative"
         >
-            <motion.div style={{ y }} className="relative z-10 text-center">
+            <motion.div style={{ y }} className="relative z-10 text-center flex flex-col items-center">
+                {/* Profile Image container */}
+                <motion.div 
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, bounce: 0.4 }}
+                    className="mb-8 relative"
+                >
+                    <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-primary/30 shadow-[0_0_40px_rgba(var(--primary),0.2)] dark:border-primary/50 flex items-center justify-center p-1 bg-gradient-to-br from-primary/20 to-transparent">
+                         <div className="w-full h-full rounded-full overflow-hidden relative bg-neutral-200 dark:bg-neutral-800">
+                             {PROFILE.image ? (
+                                <Image 
+                                    src={PROFILE.image} 
+                                    alt={PROFILE.name}
+                                    fill
+                                    sizes="(max-width: 768px) 160px, 224px"
+                                    className="object-cover hover:scale-110 transition-transform duration-500"
+                                    priority
+                                />
+                             ) : (
+                                <div className="w-full h-full flex items-center justify-center text-4xl text-neutral-400">
+                                    {PROFILE.name.charAt(0)}
+                                </div>
+                             )}
+                         </div>
+                    </div>
+                </motion.div>
+
                 <h1 className="text-[9vw] leading-[0.8] font-display font-bold tracking-tighter mix-blend-difference mb-4">
                     <Title text={PROFILE.name} />
                 </h1>

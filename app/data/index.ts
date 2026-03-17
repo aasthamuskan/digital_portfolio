@@ -21,7 +21,8 @@ export const PROFILE = {
         { name: "GitHub", icon: Github, href: "https://github.com/sunnylpu" },
         { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/sunny-tyagiiii2004/" },
         { name: "Resume", icon: FileText, href: "https://drive.google.com/drive/folders/1YyG9XancnzQQr6d030V-9sFVuYo1OYtW?usp=sharing" }
-    ]
+    ],
+    image: "/profile.jpg" // Add your profile picture to the public folder
 };
 
 export const SKILLS = {
