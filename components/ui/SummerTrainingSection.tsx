@@ -1,12 +1,61 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { SUMMER_TRAINING } from "@/app/data";
-import { Briefcase, ExternalLink } from "lucide-react";
+import { Briefcase, ExternalLink, X, Eye } from "lucide-react";
+import { useState } from "react";
 
 export default function SummerTrainingSection() {
+    const [selectedCert, setSelectedCert] = useState<{name: string, link: string} | null>(null);
+
+    const getPreviewLink = (link: string) => {
+        if (link.includes("drive.google.com/open?id=")) {
+            const id = link.split("id=")[1];
+            return `https://drive.google.com/file/d/${id}/preview`;
+        }
+        return link.replace("/view?usp=sharing", "/preview").replace("/view", "/preview");
+    };
+
     return (
         <section className="py-20 relative z-10" id="training">
+            <AnimatePresence>
+                {selectedCert && (
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 md:p-10"
+                        onClick={() => setSelectedCert(null)}
+                    >
+                        <motion.div 
+                            initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                            animate={{ scale: 1, opacity: 1, y: 0 }}
+                            exit={{ scale: 0.9, opacity: 0, y: 20 }}
+                            onClick={(e) => e.stopPropagation()}
+                            className="relative w-full max-w-5xl h-[85vh] bg-card border border-border rounded-2xl shadow-2xl overflow-hidden flex flex-col"
+                        >
+                            <div className="flex items-center justify-between px-6 py-4 border-b border-border/50 bg-background/50 backdrop-blur-md">
+                                <h3 className="text-xl font-bold text-text-primary">{selectedCert.name}</h3>
+                                <button 
+                                    onClick={() => setSelectedCert(null)}
+                                    className="p-2 rounded-full hover:bg-white/10 text-text-secondary hover:text-white transition-colors cursor-pointer"
+                                >
+                                    <X size={24} />
+                                </button>
+                            </div>
+                            <div className="flex-1 w-full bg-neutral-100 dark:bg-neutral-900 p-0 md:p-4 rounded-b-2xl">
+                                <iframe 
+                                    src={getPreviewLink(selectedCert.link)} 
+                                    className="w-full h-full border-none rounded-xl bg-white shadow-inner"
+                                    title={`${selectedCert.name} Preview`}
+                                    allow="autoplay"
+                                />
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
             <div className="container mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -55,15 +104,13 @@ export default function SummerTrainingSection() {
                                     </div>
                                     
                                     {(training as any).certificateLink && (
-                                        <a 
-                                            href={(training as any).certificateLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 rounded-lg text-sm font-medium transition-colors w-fit"
+                                        <button 
+                                            onClick={() => setSelectedCert({ name: "Summer Training Certificate", link: (training as any).certificateLink })}
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 rounded-lg text-sm font-medium transition-colors w-fit cursor-pointer"
                                         >
                                             View Certificate
-                                            <ExternalLink size={16} />
-                                        </a>
+                                            <Eye size={16} />
+                                        </button>
                                     )}
                                 </div>
                             </div>
