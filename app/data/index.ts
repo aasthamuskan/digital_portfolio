@@ -80,7 +80,8 @@ export const EXPERIENCE = [
         degree: "Web Developer Intern",
         period: "May 2025 - Jul 2025",
         desc: "Developed and optimized web modules using HTML, CSS, and structured UI components, delivering pixel-consistent layouts aligned with organizational branding. Enhanced accessibility and user navigation flows while demonstrating strong discipline, sincerity, and rapid learning in a fast-paced execution environment. Implemented responsive design principles to ensure web modules performed seamlessly across various devices and screen sizes, improving the overall mobile user experience.",
-        tags: ["HTML", "CSS", "Responsive UI", "Git", "Cross-functional"]
+        tags: ["HTML", "CSS", "Responsive UI", "Git", "Cross-functional"],
+        certificateLink: "https://drive.google.com/open?id=1aIbueZfuikrbIazmtSWgdOh2n0aZxhnt"
     }
 ];
 
@@ -145,21 +146,11 @@ export const ACHIEVEMENTS = [
 ];
 
 export const CERTIFICATES = [
-    { name: "Summer Training Project", link: "https://drive.google.com/open?id=1fJAOUFLtoQdq896shTt5HZ8bxuaDsmpP", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" },
-    { name: "Computer Programming", link: "https://drive.google.com/open?id=17HQPkL_WqIJs4-74fiVBbGerN50KZ4Nj", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" },
-    { name: "Object Oriented Programming (NeoColab)", link: "https://drive.google.com/open?id=1zMpxbK_nG8nSHr6BjSepFom5tI3XxfMK", image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800" },
-    { name: "Data Structures and Algorithms (NeoColab)", link: "https://drive.google.com/open?id=1ET8Bad6j_zhkip4xeCr_lmSCvHucmdue", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" },
-    { name: "Java Programming (NeoColab)", link: "https://drive.google.com/open?id=1_5qIdKCiH6R6fcJ2PkoBU_I2bfN4XQIM", image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&q=80&w=800" },
-    { name: "The Bits and Bytes of Computer Networking", link: "https://drive.google.com/open?id=1k96SIPmDt0lSdy7zMC5hq3Mn2oymcK2q", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" },
-    { name: "TCP/IP and Advanced Topics", link: "https://drive.google.com/open?id=1-CsxUcxlSTHFJDVveJ-JCqz1TEzmlZfc", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" },
-    { name: "Introduction to Hardware and Operating Systems", link: "https://drive.google.com/open?id=1FxWJPYm-U1fzzFJ3dOdVfzN3KdkU1CpW", image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800" },
-    { name: "Peer-to-Peer Protocols and Local Area Networks", link: "https://drive.google.com/open?id=117Nd2SDHAa3tn0TJnMoeQYZOYmDz6y73", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" },
-    { name: "ChatGPT 4 and Prompt Engineering", link: "https://drive.google.com/open?id=1YFScEMI3VOupdhB5bfdLgiw4-qm2y6NT", image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&q=80&w=800" },
-    { name: "Fundamentals of Network Communication", link: "https://drive.google.com/open?id=1lLavpJTYGgZaGjWkp9WriMxD_14r0yUD", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" },
-    { name: "Packet Switching Networks and Algorithms", link: "https://drive.google.com/open?id=1siWRvLJV1SUhQkt7eJp5LcgJ8ARU27D1", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" },
-    { name: "Build Generative AI Apps", link: "https://drive.google.com/open?id=1fPuJTAQc7NcwqvTvaCpJfunnn5GzMCmz", image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800" },
-    { name: "Master Generative and Generative AI Tools", link: "https://drive.google.com/open?id=1-oyqPSg6YZXc7fICjuPvR_GUaBnzlRa6", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" },
-    { name: "Computational Theory", link: "https://drive.google.com/open?id=1jrGA3olLdERGcF_PLxzib7snDx3G9fQq", image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&q=80&w=800" },
-    { name: "Digital Systems: From Logic Gates to Processors", link: "https://drive.google.com/open?id=1OzGJBocbAO-VXCkZF6JZcIIaAAMqc_vH", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" }
+    { name: "Cloud Computing (NPTEL)", link: "https://drive.google.com/open?id=1V_yPjU-WRzu41w23cImsAeGGFW-yn-ll", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" },
+    { name: "Master Generative AI & Tools (Udemy)", link: "https://drive.google.com/open?id=19GlSVco26WVfqBm-UDlZ4p_0weXWq-NA", image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800" },
+    { name: "ChatGPT-4 Prompt Engineering (Part 1)", link: "https://drive.google.com/open?id=1vnVK9b7IUYA4ia0uGcScbWeOQiBmckvp", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" },
+    { name: "ChatGPT-4 Prompt Engineering (Part 2)", link: "https://drive.google.com/open?id=1MOkzU-6es3sG8e02Ow9YP9blAoRlJD1l", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" },
+    { name: "Build Generative AI Apps (Infosys)", link: "https://drive.google.com/open?id=14DFu_PAPIJAsNZkrktSC-iCQU_87oN5Q", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" },
+    { name: "Build Generative AI Apps (Udemy)", link: "https://drive.google.com/open?id=1XcyvRqyKH2lSqtJYHfmUZxVp_NkAuJIM", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" }
 ];
 
