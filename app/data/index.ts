@@ -22,7 +22,7 @@ export const PROFILE = {
         { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/Aastha-Muskan2004/" },
         { name: "Resume", icon: FileText, href: "https://docs.google.com/document/d/1T5RzTobWN5nMq0xV8tFFi6lVqncOThgd/edit?usp=sharing" }
     ],
-    image: "/profile.jpg" // Add your profile picture to the public folder
+    image: "/profile-new.jpg" // Profile picture updated without cache-breaking queries
 };
 
 export const SKILLS = {
