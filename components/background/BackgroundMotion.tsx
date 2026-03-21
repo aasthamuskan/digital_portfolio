@@ -3,7 +3,7 @@
 import { useRef, useState, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
-import * as random from "maath/random/dist/maath-random.cjs";
+import * as random from "maath/random";
 import { useTheme } from "next-themes";
 import * as THREE from "three";
 

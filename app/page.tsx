@@ -2,15 +2,14 @@ import BackgroundMotion from "@/components/background/BackgroundMotion";
 import HeroSection from "@/components/ui/HeroSection";
 import AboutSection from "@/components/ui/AboutSection";
 import SkillsSection from "@/components/ui/SkillsSection";
+import ExperienceSection from "@/components/ui/ExperienceSection";
 import Timeline from "@/components/ui/Timeline";
 import ResumeSection from "@/components/ui/ResumeSection";
 import ProjectsSection from "@/components/ui/ProjectsSection";
-import SummerTrainingSection from "@/components/ui/SummerTrainingSection";
 import CertificationsSection from "@/components/ui/CertificationsSection";
 import AchievementsSection from "@/components/ui/AchievementsSection";
 
 import ContactSection from "@/components/ui/ContactSection";
-import CodingProfile from "@/components/dashboard/CodingProfile";
 import ServerStatus from "@/components/mern/ServerStatus";
 import ArchitectureDiagram from "@/components/mern/ArchitectureDiagram";
 import LiveStats from "@/components/mern/LiveStats";
@@ -24,14 +23,13 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
+      <ExperienceSection />
       <ProjectsSection />
-      <SummerTrainingSection />
       <CertificationsSection />
       <AchievementsSection />
       <Timeline />
       <ResumeSection />
       
-      <CodingProfile />
       <LiveStats />
       <ArchitectureDiagram />
       <TerminalLogs />

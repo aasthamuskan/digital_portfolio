@@ -1,26 +1,26 @@
 import { Github, Linkedin, Mail, FileText, Terminal, Code2, Cpu, Globe } from "lucide-react";
 
 export const PROFILE = {
-    name: "Sunny Tyagi",
-    title: "Full-Stack Developer | C++ Programmer",
-    email: "sunnytyagi2004@gmail.com",
-    phone: "+91 8192021030",
-    location: "Agra, Uttar Pradesh, India",
+    name: "Aastha Muskan",
+    title: "Full-Stack Developer",
+    email: "aasthamuskan9430@gmail.com",
+    phone: "+91 9110156413",
+    location: "Punjab, India",
     bio: "Passionate Full-Stack Developer proficient in MERN stack and C++. Dedicated to building efficient, user-centric web applications.",
     about: {
         text1: "I am a B.Tech Computer Science student at Lovely Professional University with a strong foundation in software development. My expertise spans across the MERN stack (MongoDB, Express, React, Node.js) and C++ programming.",
-        text2: "I actively engage in competitive programming and have developed robust web applications ranging from ed-tech platforms to travel journals. I am adaptable, organized, and committed to continuous learning.",
+        text2: "I actively engage in problem-solving and have developed robust web applications ranging from language learning platforms to e-commerce websites. I am adaptable, organized, and committed to continuous learning.",
         stats: [
             { label: "LeetCode Rank", value: "Top 4%" },
-            { label: "CGPA", value: "7.9" },
-            { label: "Projects", value: "5+" }
+            { label: "CGPA", value: "7.6" },
+            { label: "Projects", value: "Multiple" }
         ]
     },
     socials: [
-        { name: "Email", icon: Mail, href: "mailto:sunnytyagi2004@gmail.com" },
-        { name: "GitHub", icon: Github, href: "https://github.com/sunnylpu" },
-        { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/sunny-tyagiiii2004/" },
-        { name: "Resume", icon: FileText, href: "https://drive.google.com/file/d/1ggYwMVmUOb9jy4UYyreF6ngWFH1S5hoU/view?usp=sharing" }
+        { name: "Email", icon: Mail, href: "mailto:aasthamuskan9430@gmail.com" },
+        { name: "GitHub", icon: Github, href: "https://github.com/Aastha-Muskan" },
+        { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/Aastha-Muskan2004/" },
+        { name: "Resume", icon: FileText, href: "https://docs.google.com/document/d/1T5RzTobWN5nMq0xV8tFFi6lVqncOThgd/edit?usp=sharing" }
     ],
     image: "/profile.jpg" // Add your profile picture to the public folder
 };
@@ -33,17 +33,19 @@ export const SKILLS = {
         { name: "Node.js / Express", level: 75, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
         { name: "MongoDB", level: 75, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
         { name: "HTML/CSS", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
-        { name: "Python", level: 70, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" }
+        { name: "Python", level: 70, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+        { name: "Tailwind CSS", level: 80, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" }
     ],
     professional: [
-        { name: "Resilient", level: 90, image: "/trait_resilient.png" },
-        { name: "Methodical", level: 85, image: "/trait_methodical.png" },
-        { name: "Efficiency-driven", level: 90, image: "/trait_efficiency.png" },
-        { name: "Amiable", level: 85, image: "/trait_amiable.png" }
+        { name: "Adaptability", level: 90, image: "/trait_resilient.png" },
+        { name: "Time Management", level: 85, image: "/trait_methodical.png" },
+        { name: "Problem Solving", level: 90, image: "/trait_efficiency.png" },
+        { name: "Team Collaboration", level: 85, image: "/trait_amiable.png" }
     ],
     tools: [
         { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" },
         { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+        { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
         { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
         { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
         { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
@@ -54,30 +56,31 @@ export const SKILLS = {
 export const PROJECTS = [
     {
         title: "Language Learning Platform",
-        description: "A MERN stack platform with real-time speech recognition (Web Speech API) and Text-to-Speech integration for pronunciation practice.",
-        tags: ["MongoDB", "Express", "React", "Node.js", "Web Speech API"],
-        link: "https://llp-psi.vercel.app/",
-        github: "https://github.com/sunnylpu/LLP",
+        description: "Engineered a full-stack platform using the MERN stack with secure user authentication, lesson tracking, real-time Speech Recognition (STT), and Text-to-Speech (TTS) integration for pronunciation feedback.",
+        tags: ["MongoDB", "Express", "React.js", "Node.js", "Web Speech API"],
+        link: "#",
+        github: "#",
         featured: true,
         image: "/project-lang.png"
     },
     {
-        title: "CipherSchools Note App",
-        description: "Robust Full-Stack Note Application implementing full CRUD functionality, JWT authentication, and third-party API integration.",
-        tags: ["MERN Stack", "JWT", "Debugging", "Optimization"],
-        link: "https://note-app-chi-dusky.vercel.app/login",
-        github: "https://github.com/sunnylpu/Note-App",
+        title: "Techies Wardrobe - E-Commerce",
+        description: "Designed a scalable clothing rental and e-commerce platform. Implemented secure payment gateways and optimized mobile-first layouts for improved cross-device accessibility and user experience.",
+        tags: ["HTML", "CSS", "Tailwind CSS", "PHP", "MongoDB", "JavaScript"],
+        link: "#",
+        github: "#",
         featured: true,
         image: "/project-cipher.png"
-    },
+    }
+];
+
+export const EXPERIENCE = [
     {
-        title: "Event Calendar",
-        description: "Dynamic Event Calendar and scheduling web application with interactive views and streamlined event management.",
-        tags: ["Next.js", "React", "Tailwind CSS", "Scheduling"],
-        link: "https://event-calendar-bjkx.vercel.app/",
-        github: "https://github.com/sunnylpu/travel-journal-assistant",
-        featured: false,
-        image: "/project-event-calendar.png"
+        institution: "Kestone Integrated Marketing Services",
+        degree: "Web Developer Intern",
+        period: "May 2025 - Jul 2025",
+        desc: "Developed and optimized web modules using HTML, CSS, and structured UI components, delivering pixel-consistent layouts aligned with organizational branding. Enhanced accessibility and user navigation flows while demonstrating strong discipline, sincerity, and rapid learning in a fast-paced execution environment. Implemented responsive design principles to ensure web modules performed seamlessly across various devices and screen sizes, improving the overall mobile user experience.",
+        tags: ["HTML", "CSS", "Responsive UI", "Git", "Cross-functional"]
     }
 ];
 
@@ -95,56 +98,49 @@ export const SUMMER_TRAINING = [
 export const EDUCATION = [
     {
         institution: "Lovely Professional University",
-        degree: "B.Tech in Computer Science",
+        degree: "B.Tech in Computer Science and Engineering",
         period: "Aug 2023 - Present",
-        desc: "Current CGPA: 7.9. Focusing on Data Structures, Algorithms, and Web Development.",
-        grade: "7.9 CGPA",
+        desc: "Current CGPA: 7.6. Focusing on Data Structures, Algorithms, and Web Development.",
+        grade: "7.6 CGPA",
         tags: ["Computer Science", "Engineering"]
     },
     {
-        institution: "New St. Stephens Public School",
+        institution: "Asian Public School",
         degree: "Intermediate",
-        period: "Apr 2019 - Mar 2021",
-        desc: "Completed with 80.8% percentage.",
-        grade: "80.8%"
+        period: "Apr 2022 - Mar 2023",
+        desc: "Completed with 81% percentage.",
+        grade: "81%"
     },
     {
-        institution: "New St. Stephens Public School",
+        institution: "Paramount Acadaemy",
         degree: "Matriculation",
-        period: "Apr 2017 - Mar 2019",
-        desc: "Completed with 85.6% percentage.",
-        grade: "85.6%"
+        period: "Apr 2020 - Mar 2021",
+        desc: "Completed with 78% percentage.",
+        grade: "78%"
     }
 ];
 
 export const ACHIEVEMENTS = [
     {
-        title: "LeetCode Specialist",
-        desc: "Solved 110+ Problems. Strong in Dynamic Programming (x14) & Divide and Conquer.",
-        date: "2026",
+        title: "LeetCode 200 Days Badge",
+        desc: "Achieved the 200 days badge on LeetCode for consistent problem solving.",
+        date: "Dec 2025",
         icon: Terminal,
-        link: "https://leetcode.com/u/leetcodesunnytyagi/"
+        link: "https://leetcode.com/u/Aastha-Muskan2004/"
     },
     {
-        title: "Coding Ninjas Expert",
-        desc: "7300+ EXP Points. Solved 190+ items (80 Coding + 111 MCQs). Expert in C++.",
-        date: "2026",
+        title: "Top 4% on LeetCode",
+        desc: "Ranked in the top 4% globally on LeetCode.",
+        date: "Dec 2025",
         icon: Code2,
-        link: "https://www.naukri.com/code360/profile/81c1dbe6-9bb5-4a85-b9c7-0fa8c16c2853"
+        link: "https://leetcode.com/u/Aastha-Muskan2004/"
     },
     {
-        title: "GeeksforGeeks Active",
-        desc: "Coding Score 125. Institute Rank 9866. Consistent C++ Problem Solver.",
-        date: "2026",
-        icon: Cpu,
-        link: "https://www.geeksforgeeks.org/profile/sunnytyaa9fe/"
-    },
-    {
-        title: "Global Certification",
-        desc: "Cloud Computing (NPTEL) - Elite Silver Certification.",
+        title: "Consistent Problem Solver",
+        desc: "Solved 300+ algorithmic problems across arrays, recursion, and dynamic programming.",
         date: "2025",
-        icon: Globe,
-        link: "https://drive.google.com/file/d/1B6m2kF_YUD-g-Bwb_BdQjA-J0GFXgu5h/view"
+        icon: Cpu,
+        link: "https://leetcode.com/u/Aastha-Muskan2004/"
     }
 ];
 
