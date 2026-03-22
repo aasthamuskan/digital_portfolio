@@ -58,7 +58,7 @@ export const PROJECTS = [
         title: "DSA Pattern Visualizer",
         description: "A production-ready React and TypeScript application for visualizing Data Structures and Algorithms patterns step-by-step. Features interactive rendering for Sliding Window, Two Pointers, and Prefix Sum, complete with algorithm execution control and dual brute-force vs optimized modes.",
         tags: ["React 18", "TypeScript", "Tailwind CSS", "Vite", "Jest"],
-        link: "https://github.com/aasthamuskan/dsa_pattern_visulizer",
+        link: "#",
         github: "https://github.com/aasthamuskan/dsa_pattern_visulizer",
         featured: true,
         image: "/project-event-calendar.png"
@@ -67,8 +67,8 @@ export const PROJECTS = [
         title: "Language Learning Platform",
         description: "Engineered a full-stack platform using the MERN stack with secure user authentication, lesson tracking, real-time Speech Recognition (STT), and Text-to-Speech (TTS) integration for pronunciation feedback.",
         tags: ["MongoDB", "Express", "React.js", "Node.js", "Web Speech API"],
-        link: "#",
-        github: "#",
+        link: "https://llp-7khm.vercel.app/",
+        github: "https://github.com/aasthamuskan/language-learning-project",
         featured: true,
         image: "/project-lang.png"
     },
@@ -76,8 +76,8 @@ export const PROJECTS = [
         title: "Techies Wardrobe - E-Commerce",
         description: "Designed a scalable clothing rental and e-commerce platform. Implemented secure payment gateways and optimized mobile-first layouts for improved cross-device accessibility and user experience.",
         tags: ["HTML", "CSS", "Tailwind CSS", "PHP", "MongoDB", "JavaScript"],
-        link: "#",
-        github: "#",
+        link: "https://techies-wardrobe.42web.io/home.php?i=2",
+        github: "https://github.com/aasthamuskan/techies_wardrope",
         featured: true,
         image: "/project-cipher.png"
     }
