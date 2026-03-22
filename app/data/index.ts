@@ -20,7 +20,7 @@ export const PROFILE = {
         { name: "Email", icon: Mail, href: "mailto:aasthamuskan9430@gmail.com" },
         { name: "GitHub", icon: Github, href: "https://github.com/aasthamuskan" },
         { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/aastha-muskan-20239728a/" },
-        { name: "Resume", icon: FileText, href: "https://docs.google.com/document/d/1T5RzTobWN5nMq0xV8tFFi6lVqncOThgd/edit?usp=sharing" }
+        { name: "Resume", icon: FileText, href: "https://drive.google.com/file/d/1SpryfN-L7ihpOsF-Xf83k_LJ5SiwNOtF/view?usp=sharing" }
     ],
     image: "/profile-new.jpg" // Profile picture updated without cache-breaking queries
 };
