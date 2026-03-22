@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
-const GITHUB_USERNAME = "sunnylpu";
-const LEETCODE_USERNAME = "leetcodesunnytyagi";
+const GITHUB_USERNAME = "aasthamuskan";
+const LEETCODE_USERNAME = "Aastha-Muskan2004";
 
 // 1 Hour Cache
 export const revalidate = 3600;
@@ -13,7 +13,7 @@ const FALLBACK_GITHUB = {
     stars: 15, // Approximate
     lastCommit: "Initial commit for portfolio",
     lastActive: new Date().toISOString(),
-    avatar: "https://github.com/sunnylpu.png",
+    avatar: "https://github.com/aasthamuskan.png",
     profileUrl: `https://github.com/${GITHUB_USERNAME}`
 };
 

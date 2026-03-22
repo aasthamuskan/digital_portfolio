@@ -99,7 +99,7 @@ export default function ContactSection() {
                                         value={formData.message}
                                         onChange={(e) => setFormData({...formData, message: e.target.value})}
                                         className="w-full bg-background/50 border border-border/50 rounded-xl px-4 py-3 text-text-primary focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all font-sans resize-none outline-hidden"
-                                        placeholder="Hi Sunny, I'd like to discuss a project..."
+                                        placeholder="Hi Aastha Muskan, I'd like to discuss a project..."
                                     />
                                 </div>
                                 
