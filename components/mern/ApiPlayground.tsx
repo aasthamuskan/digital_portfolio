@@ -19,7 +19,7 @@ export default function ApiPlayground() {
             setResponse(JSON.stringify({
                 status: 200,
                 data: [
-                    { id: 1, name: "Sunny Tyagi", role: "Developer" },
+                    { id: 1, name: "Aastha Muskan", role: "Developer" },
                     { id: 2, name: "Recruiter", role: "Hiring Manager" }
                 ],
                 message: "Data fetched successfully"

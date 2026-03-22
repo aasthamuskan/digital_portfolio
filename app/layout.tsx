@@ -11,8 +11,8 @@ const outfitVariable = "font-sans";
 const spaceGroteskVariable = "font-mono";
 
 export const metadata: Metadata = {
-  title: "Sunny Tyagi | Creative Developer",
-  description: "Next-generation interactive portfolio of Sunny Tyagi, a Full-Stack Developer.",
+  title: "Aastha Muskan | Creative Developer",
+  description: "Next-generation interactive portfolio of Aastha Muskan, a Full-Stack Developer.",
 };
 
 export default function RootLayout({

@@ -1,4 +1,4 @@
-# Sunny Tyagi - Portfolio Website
+# Aastha Muskan - Portfolio Website
 
 A "Next-Generation" interactive portfolio website built with **Next.js 15**, **Tailwind CSS**, **Framer Motion**, and **GSAP**.
 
