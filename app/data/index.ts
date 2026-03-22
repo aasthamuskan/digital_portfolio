@@ -55,6 +55,15 @@ export const SKILLS = {
 
 export const PROJECTS = [
     {
+        title: "DSA Pattern Visualizer",
+        description: "A production-ready React and TypeScript application for visualizing Data Structures and Algorithms patterns step-by-step. Features interactive rendering for Sliding Window, Two Pointers, and Prefix Sum, complete with algorithm execution control and dual brute-force vs optimized modes.",
+        tags: ["React 18", "TypeScript", "Tailwind CSS", "Vite", "Jest"],
+        link: "https://github.com/aasthamuskan/dsa_pattern_visulizer",
+        github: "https://github.com/aasthamuskan/dsa_pattern_visulizer",
+        featured: true,
+        image: "/project-event-calendar.png"
+    },
+    {
         title: "Language Learning Platform",
         description: "Engineered a full-stack platform using the MERN stack with secure user authentication, lesson tracking, real-time Speech Recognition (STT), and Text-to-Speech (TTS) integration for pronunciation feedback.",
         tags: ["MongoDB", "Express", "React.js", "Node.js", "Web Speech API"],
