@@ -21,7 +21,7 @@ const CHALLENGES = [
         title: "Instagram Tech Challenge",
         description: "Building an engaging community of passionate developers by actively sharing byte-sized coding milestones, web development progress, and glimpses into my routine as a software engineer.",
         icon: Instagram,
-        link: "https://instagram.com/", // Add your Instagram profile link here
+        link: "https://www.instagram.com/aastha_this_sidee/",
         color: "from-pink-500/20 to-purple-500/20",
         iconColor: "text-pink-500"
     }
