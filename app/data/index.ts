@@ -12,7 +12,6 @@ export const PROFILE = {
         text2: "I actively engage in problem-solving and have developed robust web applications ranging from language learning platforms to e-commerce websites. I am adaptable, organized, and committed to continuous learning.",
         stats: [
             { label: "LeetCode Rank", value: "Top 4%" },
-            { label: "CGPA", value: "7.6" },
             { label: "Projects", value: "Multiple" }
         ]
     },
@@ -110,8 +109,7 @@ export const EDUCATION = [
         institution: "Lovely Professional University",
         degree: "B.Tech in Computer Science and Engineering",
         period: "Aug 2023 - Present",
-        desc: "Current CGPA: 7.6. Focusing on Data Structures, Algorithms, and Web Development.",
-        grade: "7.6 CGPA",
+        desc: "Focusing on Data Structures, Algorithms, and Web Development.",
         tags: ["Computer Science", "Engineering"]
     },
     {

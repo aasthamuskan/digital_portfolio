@@ -8,6 +8,7 @@ import ResumeSection from "@/components/ui/ResumeSection";
 import ProjectsSection from "@/components/ui/ProjectsSection";
 import CertificationsSection from "@/components/ui/CertificationsSection";
 import AchievementsSection from "@/components/ui/AchievementsSection";
+import SocialFootprintsSection from "@/components/ui/SocialFootprintsSection";
 
 import ContactSection from "@/components/ui/ContactSection";
 import ServerStatus from "@/components/mern/ServerStatus";
@@ -28,6 +29,7 @@ export default function Home() {
       <CertificationsSection />
       <AchievementsSection />
       <Timeline />
+      <SocialFootprintsSection />
       <ResumeSection />
       
       <LiveStats />
